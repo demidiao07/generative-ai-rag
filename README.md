@@ -36,4 +36,4 @@ The short, independent nature of social media posts also simplifies manual or se
 Chunking was performed using LangChain’s RecursiveCharacterTextSplitter. Since social media posts are generally short, most posts were treated as single chunks. Longer posts were split using a chunk size of 512 characters with an overlap of 50 characters. Chunking behavior was validated through exploratory analysis in a Jupyter notebook.
 
 
-Embedding models were evaluated in notebooks/embedding_experiments.ipynb using nearest-neighbor sanity checks. We selected all-MiniLM-L6-v2 for the remainder of the project.
+I tested multiple embedding models on a small subset of the dataset (500 chunks) by embedding the text and checking whether nearest-neighbor retrieval returned semantically similar posts (same topic/event). I compared runtime and embedding dimensionality. I selected all-MiniLM-L6-v2 because it produced the most coherent neighbors while remaining efficient for large-scale embedding.
