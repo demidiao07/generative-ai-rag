@@ -31,3 +31,6 @@ This dataset is compatible with future course assignments because it can support
 * LoRA fine-tuning using human-labeled data such as sentiment or topic annotations
   
 The short, independent nature of social media posts also simplifies manual or semi-automated labeling in later fine-tuning tasks.
+
+
+Chunking was performed using LangChain’s RecursiveCharacterTextSplitter. Since social media posts are generally short, most posts were treated as single chunks. Longer posts were split using a chunk size of 512 characters with an overlap of 50 characters. Chunking behavior was validated through exploratory analysis in a Jupyter notebook.
