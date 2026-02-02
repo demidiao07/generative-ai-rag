@@ -1,0 +1,27 @@
+# Data
+data/
+*.csv
+
+# Vector DB
+chroma_db/
+
+# Secrets
+openai.txt
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs / cache
+*.log
+.cache/
