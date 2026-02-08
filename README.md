@@ -1,4 +1,4 @@
-# Generative AI Assignment 1
+# Generative AI Project
 **Name:** Wenshu (Demi) Diao
 
 ## Overview
